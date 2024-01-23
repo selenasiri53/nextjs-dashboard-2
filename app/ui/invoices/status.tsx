@@ -1,5 +1,6 @@
 import { CheckIcon, ClockIcon } from '@heroicons/react/24/outline';
-import clsx from 'clsx';
+import clsx from 'clsx'; // new - allows conditional styling; status = green if paid || status = gray if pending
+// clsx used in status.tsx and pagination.tsx
 
 export default function InvoiceStatus({ status }: { status: string }) {
   return (
