@@ -13,7 +13,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
     console.log(`Searching... ${term}`); 
 
     const params = new URLSearchParams(searchParams);
-    params.set('page', '1'); // new - set the initial page
+    params.set('page', '1'); // new - set the initial page when a user starts a new query
     if (term) {
       params.set('query', term);
     } else {
